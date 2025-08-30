@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Button Labels -->
+  <SKShareSettings.CopySettings>Copy Settings</SKShareSettings.CopySettings>
+  <SKShareSettings.PasteSettings>Paste Settings</SKShareSettings.PasteSettings>
+  
+  <!-- Tooltips -->
+  <SKShareSettings.CopyTooltip>Copy current mod settings to clipboard for sharing</SKShareSettings.CopyTooltip>
+  <SKShareSettings.PasteTooltip>Paste settings from clipboard</SKShareSettings.PasteTooltip>
+  <SKShareSettings.PasteTooltipNoSettings>No valid settings found in clipboard</SKShareSettings.PasteTooltipNoSettings>
+  
+  <!-- Copy Messages -->
+  <SKShareSettings.NoSettingsToCopy>Mod has no settings to copy</SKShareSettings.NoSettingsToCopy>
+  <SKShareSettings.CopyFailed>Failed to copy settings data to clipboard</SKShareSettings.CopyFailed>
+  <SKShareSettings.CopySuccess>Settings copied to clipboard from {0} ({1})</SKShareSettings.CopySuccess>
+  <SKShareSettings.CopyException>Failed to copy settings - check logs</SKShareSettings.CopyException>
+  
+  <!-- Paste Messages -->
+  <SKShareSettings.NoValidClipboard>No valid settings found in clipboard</SKShareSettings.NoValidClipboard>
+  <SKShareSettings.PackageIdMismatch>Cannot paste settings: Package ID mismatch. Current mod: '{0}', clipboard: '{1}'</SKShareSettings.PackageIdMismatch>
+  <SKShareSettings.NoCurrentSettings>Unable to retrieve current mod settings</SKShareSettings.NoCurrentSettings>
+  <SKShareSettings.PasteSuccess>Settings pasted from {0} to {1}</SKShareSettings.PasteSuccess>
+  <SKShareSettings.PasteApplyFailed>Failed to apply settings - check logs</SKShareSettings.PasteApplyFailed>
+  <SKShareSettings.PasteException>Failed to paste settings - check logs</SKShareSettings.PasteException>
+  
+  <!-- Confirmation Dialog -->
+  <SKShareSettings.ConfirmPaste>Paste settings from {0} ({1})?\n\nThis will overwrite current settings and refresh the dialog.</SKShareSettings.ConfirmPaste>
+  <SKShareSettings.VersionMismatchWarning>\n\nWARNING: Version mismatch detected!\nCurrent: {0}\nClipboard: {1}\n\nSettings may not be fully compatible.</SKShareSettings.VersionMismatchWarning>
+  
+  <!-- Loading Messages -->
+  <SKShareSettings.RefreshingSettings>Refreshing settings...</SKShareSettings.RefreshingSettings>
+</LanguageData>
