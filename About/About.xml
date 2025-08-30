@@ -18,6 +18,6 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>Share mod your settings with anyone.</description>
+  <description>Share your mod settings with anyone.</description>
   <modVersion>1.0.0</modVersion>
 </ModMetaData>
