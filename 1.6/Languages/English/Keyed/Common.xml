@@ -3,11 +3,16 @@
   <!-- Button Labels -->
   <SKShareSettings.CopySettings>Copy Settings</SKShareSettings.CopySettings>
   <SKShareSettings.PasteSettings>Paste Settings</SKShareSettings.PasteSettings>
+  <SKShareSettings.CopyAllSettings>Copy All</SKShareSettings.CopyAllSettings>
+  <SKShareSettings.PasteAllSettings>Paste All</SKShareSettings.PasteAllSettings>
   
   <!-- Tooltips -->
   <SKShareSettings.CopyTooltip>Copy current mod settings to clipboard for sharing</SKShareSettings.CopyTooltip>
   <SKShareSettings.PasteTooltip>Paste settings from clipboard</SKShareSettings.PasteTooltip>
   <SKShareSettings.PasteTooltipNoSettings>No valid settings found in clipboard</SKShareSettings.PasteTooltipNoSettings>
+  <SKShareSettings.CopyAllTooltip>Copy settings from all mods to clipboard for sharing</SKShareSettings.CopyAllTooltip>
+  <SKShareSettings.PasteAllTooltip>Paste settings for all matching mods from clipboard</SKShareSettings.PasteAllTooltip>
+  <SKShareSettings.PasteAllTooltipNoSettings>No valid all-mod settings found in clipboard</SKShareSettings.PasteAllTooltipNoSettings>
   
   <!-- Copy Messages -->
   <SKShareSettings.NoSettingsToCopy>Mod has no settings to copy</SKShareSettings.NoSettingsToCopy>
@@ -29,4 +34,20 @@
   
   <!-- Loading Messages -->
   <SKShareSettings.RefreshingSettings>Refreshing settings...</SKShareSettings.RefreshingSettings>
+  
+  <!-- NEW: All Settings Copy/Paste Messages -->
+  <SKShareSettings.NoModsWithSettings>No mods with settings found</SKShareSettings.NoModsWithSettings>
+  <SKShareSettings.NoValidSettingsToCopy>No valid settings found to copy from any mod</SKShareSettings.NoValidSettingsToCopy>
+  <SKShareSettings.CopyAllFailed>Failed to create settings bundle for clipboard</SKShareSettings.CopyAllFailed>
+  <SKShareSettings.CopyAllSuccess>Settings copied from {0} of {1} mods to clipboard</SKShareSettings.CopyAllSuccess>
+  <SKShareSettings.CopyAllException>Failed to copy all settings - check logs</SKShareSettings.CopyAllException>
+  
+  <SKShareSettings.NoValidAllClipboard>No valid settings bundle found in clipboard</SKShareSettings.NoValidAllClipboard>
+  <SKShareSettings.NoMatchingMods>No matching mods found between clipboard and currently loaded mods</SKShareSettings.NoMatchingMods>
+  <SKShareSettings.ConfirmPasteAll>Paste settings for {0} mods (from {1} total in clipboard)?\n\nExported from RimWorld {2} on {3}\n\nThis will overwrite current settings for matching mods.</SKShareSettings.ConfirmPasteAll>
+  <SKShareSettings.MissingModsWarning>\n\nNote: {0} mods from clipboard are not currently loaded and will be skipped.</SKShareSettings.MissingModsWarning>
+  <SKShareSettings.PasteAllException>Failed to paste all settings - check logs</SKShareSettings.PasteAllException>
+  <SKShareSettings.PasteAllSuccess>Successfully applied settings to {0} of {1} mods</SKShareSettings.PasteAllSuccess>
+  <SKShareSettings.PasteAllFailed>Failed to apply settings to any mods</SKShareSettings.PasteAllFailed>
+  <SKShareSettings.PasteAllApplyFailed>Failed to apply all settings - check logs</SKShareSettings.PasteAllApplyFailed>
 </LanguageData>

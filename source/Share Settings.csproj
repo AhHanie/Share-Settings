@@ -69,9 +69,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllModsSettingsSchema.cs" />
+    <Compile Include="AllSettingsClipboardManager.cs" />
     <Compile Include="HarmonyPatcher.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsClipboardManager.cs" />
     <Compile Include="SettingsSchema.cs" />
     <Compile Include="SettingsSerializer.cs" />
   </ItemGroup>
