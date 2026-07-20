@@ -89,6 +89,26 @@ namespace SK_Share_Settings
             }
             currentDialog = null;
         }
+
+        // Vanilla Dialog_ModSettings.PreClose() calls mod.WriteSettings() with no
+        // error handling, and WindowStack.TryRemove only removes the window from its
+        // internal list *after* PreClose() returns. If the settings file write throws
+        // (e.g. a transient Win32 IOException from an antivirus/indexer/cloud-sync file
+        // lock), the dialog is left permanently stuck on the window stack, and every
+        // subsequent close attempt (including our own CopySettings/PasteSettings
+        // close-then-reopen flow) retries and fails the same way forever. Swallow the
+        // exception here so the window can always finish closing.
+        [HarmonyFinalizer]
+        [HarmonyPatch("PreClose")]
+        public static Exception PreClose_Finalizer(Exception __exception)
+        {
+            if (__exception != null)
+            {
+                Log.Error($"[SK Share Settings] Suppressed exception while writing mod settings on dialog close (would otherwise permanently strand the settings window): {__exception}");
+            }
+
+            return null;
+        }
     }
 
     // Patch Window.PreOpen to increase height for Dialog_ModSettings instances

@@ -219,7 +219,18 @@ namespace SK_Share_Settings
                 // Small delay to ensure the dialog is fully closed, then reopen
                 LongEventHandler.QueueLongEvent(delegate
                 {
-                    Find.WindowStack.Add(new Dialog_ModSettings(mod));
+                    try
+                    {
+                        Find.WindowStack.Add(new Dialog_ModSettings(mod));
+                    }
+                    catch (Exception ex)
+                    {
+                        // Adding re-closes any existing Dialog_ModSettings first; if that
+                        // close still fails for some reason, don't let it escape as an
+                        // uncaught "Exception from long event" - just log and give up on
+                        // reopening rather than leaving the queued event to blow up.
+                        Log.Error($"[SK Share Settings] Failed to reopen mod settings dialog: {ex.Message}");
+                    }
                 }, "SKShareSettings.RefreshingSettings".Translate(), false, null);
             }
         }
